@@ -4,3 +4,6 @@ __pycache__/
 results/*_review.jpg
 
 .jupyter/
+
+# Local helper scripts; experiment code is in the notebook.
+*.py
