@@ -7,3 +7,9 @@ results/*_review.jpg
 
 # Local helper scripts; experiment code is in the notebook.
 *.py
+
+# Local print intermediate and superseded report.
+230436X_a02.html
+230436X_a02_export.pdf
+230436X_a02_detailed.pdf
+results/notebook_pdf_review.jpg

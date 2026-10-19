@@ -1,0 +1,15 @@
+{
+  "source": "230436X_a02.ipynb",
+  "method": "nbconvert HTMLExporter with embedded images, then Chrome headless Print to PDF",
+  "content": "executed notebook markdown, code and saved outputs; no rewritten report",
+  "pages": 14,
+  "embedded_images": 8,
+  "notebook_sha256": "d3a2103d61e2c5fecc2f761898a0e3ac38ae88827885aa61dc6fa224eda9e301",
+  "pdf_sha256": "0b4c952b867b413f74b896f30be7e9339dd9126aa29ad6158be260417ea01b37",
+  "checks": {
+    "name_and_index_present": true,
+    "all_eight_figures_present": true,
+    "final_notebook_checks_present": true,
+    "long_code_lines_visible": true
+  }
+}

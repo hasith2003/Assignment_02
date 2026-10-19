@@ -1,4 +1,4 @@
-﻿# EN3160 Assignment 2: Fitting and Alignment
+# EN3160 Assignment 2: Fitting and Alignment
 
 **NAHG Nettikumara | 230436X**
 
@@ -31,13 +31,14 @@ under results/.
 
 ## Reports and results
 
-- [Four-page submission report](230436X_a02.pdf)
-- [Detailed report](230436X_a02_detailed.pdf)
+- [PDF exported directly from the executed notebook](230436X_a02.pdf)
 - [Measured results](results/metrics.json)
 - [Image sources and credits](my_images/SOURCES.md)
 
-The assignment specifies a four-page limit for the submission report.
-The detailed version contains additional explanations and figures.
+The PDF is a direct 14-page conversion of the notebook, including its code,
+explanations and all eight saved figures. It was exported with nbconvert to
+self-contained HTML and printed to A4 PDF, with code wrapping to prevent clipping.
+Export provenance and checks are recorded in results/pdf_export.json.
 
 The sunflower circles describe dark central disks, not outer petals. Candidate
 detections are not a validated flower count. PCB differences can include parallax,

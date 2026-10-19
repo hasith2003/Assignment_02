@@ -1,27 +1,8 @@
 {
   "230436X_a02.pdf": {
-    "pages": 4,
-    "text_characters_per_page": [
-      1613,
-      1710,
-      1686,
-      2322
-    ],
-    "review_sheet": "230436X_a02_review.jpg"
-  },
-  "230436X_a02_detailed.pdf": {
-    "pages": 8,
-    "text_characters_per_page": [
-      1446,
-      2015,
-      1584,
-      1813,
-      1442,
-      2142,
-      1730,
-      2423
-    ],
-    "review_sheet": "230436X_a02_detailed_review.jpg"
+    "pages": 14,
+    "source": "direct notebook export",
+    "embedded_images": 8
   },
   "notebook": {
     "valid_json": true,
