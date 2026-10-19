@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "unit_line_normal": true,
+    "circle_center_within_one_unit": true,
+    "circle_radius_within_one_unit": true,
+    "exact_line_sample": true,
+    "exact_circle_sample": true,
+    "collinear_circle_rejected": true,
+    "homography_corner_error_below_1e_3_px": true,
+    "five_non_template_pcbs": true,
+    "all_pcb_median_errors_below_3px": true,
+    "all_pcb_homographies_finite_invertible": true,
+    "zero_template_self_difference": true,
+    "lossless_maps_and_support": true
+  },
+  "all_passed": true,
+  "corner_errors_px": [
+    0.0,
+    0.0
+  ],
+  "line_normal_norm": 0.9999999999999999,
+  "versions": {
+    "python": "3.12.1",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "matplotlib": "3.9.2",
+    "reportlab": "4.2.5"
+  },
+  "notes": [
+    "AAAA1 has few inliers; global alignment has lower confidence.",
+    "Image quality and defect labels are not established by these numerical checks."
+  ]
+}
