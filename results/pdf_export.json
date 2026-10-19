@@ -4,12 +4,13 @@
   "content": "executed notebook markdown, code and saved outputs; no rewritten report",
   "pages": 14,
   "embedded_images": 8,
-  "notebook_sha256": "d3a2103d61e2c5fecc2f761898a0e3ac38ae88827885aa61dc6fa224eda9e301",
-  "pdf_sha256": "0b4c952b867b413f74b896f30be7e9339dd9126aa29ad6158be260417ea01b37",
+  "notebook_sha256": "6d7867cdb4f235154fff82317cf38cb3f0556b0da68c0bac3694edb1fdd9e397",
+  "pdf_sha256": "5cb8e5872587010a33cea7aa7778b316c22147ef20d05fd4789ea461f7a1fb85",
   "checks": {
     "name_and_index_present": true,
     "all_eight_figures_present": true,
     "final_notebook_checks_present": true,
-    "long_code_lines_visible": true
+    "long_code_lines_visible": true,
+    "no_workflow_commentary": true
   }
 }
