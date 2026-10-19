@@ -1,4 +1,4 @@
-﻿# EN3160 Assignment 2 — Fitting and Alignment
+# EN3160 Assignment 2 — Fitting and Alignment
 
 NAHG Nettikumara · 230436X
 GitHub profile: https://github.com/hasith2003
@@ -8,7 +8,7 @@ Repository: https://github.com/hasith2003/Assignment_02
 
 - 230436X_a02_detailed.pdf — eight-page detailed report requested by the student.
 - 230436X_a02.pdf — four-page submission report matching the assignment limit.
-- 230436X_a02.ipynb — runnable notebook organized by question, with saved-result images.
+- 230436X_a02.ipynb — executed notebook with code-cell results and embedded figures.
 - assignment.py — complete, deterministic experiment implementation.
 - results/metrics.json — measured parameters, consensus sizes and alignment statistics.
 - results/validation.json — numerical verification and exact package versions.
@@ -31,10 +31,15 @@ In PowerShell, from D:\Ard\CV:
     & D:\en3160_a02_env\venv\Scripts\python.exe build_report.py
 
 The first script performs all experiments. The second generates supplementary
-figures, runs numerical checks and rebuilds the notebook. The third creates PDFs.
+figures and runs numerical checks. The third creates PDFs.
 For the notebook, select D:\en3160_a02_env\venv\Scripts\python.exe as your Python
-environment in an editor that supports notebooks. The notebook is supplied with
-runnable cells and saved figure links; its code cells are not marked as executed.
+environment in an editor that supports notebooks. The notebook is executed from a fresh Jupyter kernel and saved with embedded
+outputs. To rebuild and execute it again, run:
+
+    & D:\en3160_a02_env\venv\Scripts\python.exe execute_notebook.py
+
+Execution status is saved to results/notebook_execution.json.
+prepare_deliverables.py preserves the executed notebook.
 
 ## Run on another computer
 

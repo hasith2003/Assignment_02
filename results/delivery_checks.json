@@ -25,7 +25,29 @@
   },
   "notebook": {
     "valid_json": true,
-    "code_cells_compile": 9
+    "code_cells_compile": 17,
+    "executed_code_cells": 17,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "error_outputs": 0,
+    "embedded_png_outputs": 8
   },
   "assignment": {
     "no_hough_circles_call": true

@@ -1,4 +1,4 @@
-﻿"""Inspect deliverable PDFs and notebook; render review sheets."""
+"""Inspect deliverable PDFs and notebook; render review sheets."""
 from pathlib import Path
 import json, ast
 import pymupdf
@@ -37,7 +37,16 @@ for cell in notebook['cells']:
 assert count>=9
 tree=ast.parse((ROOT/'assignment.py').read_text())
 assert not any(isinstance(node,ast.Call) and isinstance(node.func,ast.Attribute) and node.func.attr=='HoughCircles' for node in ast.walk(tree))
-records['notebook']={'valid_json':True,'code_cells_compile':count}
+code_cells=[c for c in notebook['cells'] if c['cell_type']=='code']
+execution_counts=[c['execution_count'] for c in code_cells]
+assert execution_counts==list(range(1,count+1))
+error_outputs=[o for c in code_cells for o in c['outputs'] if o.get('output_type')=='error']
+assert not error_outputs
+images=sum('image/png' in o.get('data',{}) for c in code_cells for o in c['outputs'])
+assert images>=7
+records['notebook']={'valid_json':True,'code_cells_compile':count,
+                     'executed_code_cells':count,'execution_counts':execution_counts,
+                     'error_outputs':len(error_outputs),'embedded_png_outputs':images}
 records['assignment']={'no_hough_circles_call':True}
 (OUT/'delivery_checks.json').write_text(json.dumps(records,indent=2))
 print(json.dumps(records,indent=2))
